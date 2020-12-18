@@ -1,1 +1,12 @@
-/* My style */
+/* Nest again */
+@mixin px-marg($margin) {
+    margin-left: $margin;
+    margin-right: $margin;
+  }
+  
+  body {
+    @include px-marg(10px);
+  }
+  div {
+    @include px-marg(15px);
+  }
